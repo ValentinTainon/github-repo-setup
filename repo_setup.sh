@@ -14,43 +14,43 @@ check_cmd() {
     if [ $? -eq 0 ]; then
         echo -e "[$GREEN OK $RESET_CLR]"
     else
-        echo -e "[$RED ERREUR $RESET_CLR]"
+        echo -e "[$RED ERROR $RESET_CLR]"
         exit 1
     fi
 }
 
 ### START OF SCRIPT ###
-read -p "Entrer le titre du README : " readme_title
+read -p "Enter the README title: " readme_title
 
-echo -n "Création de README.md : "
+echo -n "Creating README.md: "
 echo "# $readme_title" >> README.md 2>/dev/null
 check_cmd
 
-echo -n "Initialisation de Git : "
+echo -n "Initializing Git: "
 git init >/dev/null 2>&1
 check_cmd
 
-echo -n "Ajout de tout le contenu : "
+echo -n "Added all content: "
 git add . >/dev/null 2>&1
 check_cmd
 
-read -p "Entrer votre message de commit : " commit_message
+read -p "Enter your commit message: " commit_message
 
-echo -n "Commit des changements : "
+echo -n "Commit changes: "
 git commit -m "$commit_message" >/dev/null 2>&1
 check_cmd
 
-echo -n "Positionnement sur la branche main : "
+echo -n "Positioning on the main branch: "
 git branch -M main >/dev/null 2>&1
 check_cmd
 
-read -p "Entrer votre nom de dépôt distant : " repo_name
+read -p "Enter your remote repository name: " repo_name
 
-echo -n "Ajout du dépôt distant : "
+echo -n "Adding the remote repository: "
 git remote add origin https://github.com/ValentinTainon/$repo_name.git >/dev/null 2>&1
 check_cmd
 
-echo -n "Push sur le dépôt distant : "
+echo -n "Push to the remote repository: "
 git push -u origin main >/dev/null 2>&1
 check_cmd
 ### END OF SCRIPT ###
