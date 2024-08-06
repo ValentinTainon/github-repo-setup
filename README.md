@@ -12,6 +12,7 @@ The following command lines will be executed when the script is launched, you wi
 - git remote add origin
 - git push
 
+Tip: For a better user experience, configure an alias to launch the script.
 
 # Configuration rapide et facile d'un nouveau dépôt Github
 
@@ -26,3 +27,5 @@ Les lignes de commande suivantes seront exécutées au lancement du script, il v
 - git branch
 - git remote add origin
 - git push
+
+Conseil : Pour une meilleure expérience utilisateur, configurer un alias pour lancer le script.
