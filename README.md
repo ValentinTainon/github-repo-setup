@@ -14,6 +14,7 @@ The following command lines will be executed when the script is launched, you wi
 
 Tip: For a better user experience, configure an alias to launch the script.
 
+
 # Configuration rapide et facile d'un nouveau dépôt Github
 
 Script bash à exécuter juste après la création d'un nouveau dépôt Github afin de le configurer rapidement.
