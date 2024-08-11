@@ -20,10 +20,8 @@ check_cmd() {
 }
 
 ### START OF SCRIPT ###
-read -p "Enter the README title: " readme_title
-
 echo -n "Creating README.md: "
-echo "# $readme_title" >> README.md 2>/dev/null
+nano README.md
 check_cmd
 
 echo -n "Initializing Git: "
