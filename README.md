@@ -11,5 +11,3 @@ The following command lines will be executed when the script is launched, you wi
 - git branch
 - git remote add origin
 - git push
-
-Tip: For a better user experience, configure an alias to launch the script.
